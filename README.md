@@ -5,17 +5,19 @@ A bibtex bibliography of papers, books and theses focusing on the topic of Light
 ### Usage
 The bibliography can be used in LaTeX as any other would:
 ```
+% in header of main.tex
 \usepackage[backend=biber, style=ieee]{biblatex}
 \addbibresource{lib_Books.bib}
 \addbibresource{lib_Papers.bib}
+...
+% document contents
 ...
 \printbibliography
 ```
 
 ### Style
-The citation key style was adopted from google scholar (exporting bibtex entries) where unusual surnames were handled on a case by case basis (eg. van Antwerpen). Most of the entries were extracted from the ACM Digital Library, the Wiley Online Library and Springer Link, very few were also created by hand to fix issues and inaccuracies. The general idea is to embed as much information as possible in the entries by using more than the data google scholar provides for citations. One counter example is the deliberate lack of abstracts.
-
-A custom script was used to format entries in the same style (indentations and braces) to allow better visual parsing. Braces are used instead of quotation marks which implies that **month** entries are mostly given as integers (to not depend on the automatic expansion).
+This bibtex library for Light Transport Simulation combines the citation key style and the convenience of Google Scholar, with the entry completeness provided by other digital libraries. Most of the entries featured in this library were extracted from the ACM Digital Library, the Wiley Online Library, and Springer Link. A few entries were created/modified by hand to fix issues and mistakes. A custom script was used to ensure that all entries were formatted in the same style (e.g. indentations, braces), which allows for better visual parsing. In this library, braces are used instead of quotation marks; to avoid dependency on the automatic expansion, all *month* entries are given as integers.
+In general, we seek to embed as much information as possible into each entry; however, we do deliberately omit the abstract of each paper.
 
 ### Collaboration
-In case you notice any errors, inaccracies or missing information please let me know via an issue! The same holds if you think that there are important papers missing. I'm very happy to add entries given that they are related to the topic. It may just take me a few days to read the suggested paper.
+In case you notice any errors, inaccuracies or missing information please let me know via an issue! The same holds if you think that there are important papers missing. I'm very happy to add entries given that they are related to the topic. It may just take me a few days to read the suggested paper.
